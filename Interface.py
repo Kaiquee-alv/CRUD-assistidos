@@ -18,7 +18,7 @@ abas.pack(fill="both", expand=True, padx=20, pady=20)
 aba_cadastro = abas.add("Cadastrar")
 aba_listagem = abas.add("Listar/Editar")
 
-# ============ ABA DE CADASTRO ============
+# Cadastro 
 def cadastrar():
     nome = entry_nome.get()
     cpf = entry_cpf.get()
@@ -55,7 +55,7 @@ combo_genero.pack(pady=10, padx=20)
 botao_cadastrar = ctk.CTkButton(aba_cadastro, text="Cadastrar", command=cadastrar)
 botao_cadastrar.pack(pady=20)
 
-# ============ ABA DE LISTAGEM ============
+# Listar/Editar
 tabela = ctk.CTkFrame(aba_listagem)
 tabela.pack(fill="both", expand=True, padx=10, pady=10)
 
